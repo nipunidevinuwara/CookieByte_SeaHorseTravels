@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".BookActivity_02">
+<!--    <include-->
+<!--        android:id="@+id/customToolBar1"-->
+<!--        layout="@layout/custom_toolbar2"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"/>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-144dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="-145dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="127dp"
+                    android:layout_height="108dp"
+                    android:layout_marginTop="1dp"
+                    android:padding="5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/num01" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="141dp"
+                    android:layout_height="103dp"
+                    android:layout_marginStart="132dp"
+                    android:layout_marginTop="1dp"
+                    android:padding="5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/number2" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="144dp"
+                    android:layout_height="103dp"
+                    android:layout_marginStart="268dp"
+                    android:layout_marginTop="1dp"
+                    android:padding="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/num03" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="172dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/detailsCB"
+                android:textColor="#C800FF"
+                android:textSize="36sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="-46dp"
+                android:button="@drawable/hexagon"
+                android:checked="true" />
+
+            <TextView
+                android:id="@+id/test"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="223dp"
+                android:layout_height="79dp"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="27dp"
+                android:paddingTop="20dp"
+                android:text="@string/type"
+                android:textColor="#C800FF"
+                android:textSize="36sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="326dp"
+                android:layout_height="235dp"
+                android:layout_marginLeft="38dp">
+
+                <RadioButton
+                    android:id="@+id/Neptune"
+                    android:layout_width="match_parent"
+                    android:layout_height="79dp"
+                    android:button="@drawable/custom_button"
+                    android:paddingLeft="38px"
+                    android:text="@string/type_01"
+                    android:textColor="#C800FF"
+                    android:textSize="34sp" />
+
+                <RadioButton
+                    android:id="@+id/spaceJump"
+                    android:layout_width="match_parent"
+                    android:layout_height="79dp"
+                    android:button="@drawable/custom_button"
+                    android:paddingLeft="38px"
+                    android:text="@string/type_02"
+                    android:textColor="#C800FF"
+                    android:textSize="34sp" />
+
+                <RadioButton
+                    android:id="@+id/solarSail"
+                    android:layout_width="match_parent"
+                    android:layout_height="71dp"
+                    android:layout_marginBottom="156dp"
+                    android:button="@drawable/custom_button"
+                    android:paddingLeft="38px"
+                    android:text="@string/type_03"
+                    android:textColor="#C800FF"
+                    android:textSize="34sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="327dp"
+                android:layout_height="59dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="10dp"
+                android:text="Month :        Day :"
+                android:textColor="#C800FF"
+                android:textSize="36sp"
+                tools:ignore="DuplicateIds" />
+
+            <Button
+                android:id="@+id/datePickerButton"
+                style="?android:spinnerStyle"
+                android:layout_width="304dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="1dp"
+                android:onClick="openDatePicker"
+                android:text="   JAN          01"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="98dp"
+                android:layout_height="59dp"
+                android:layout_marginLeft="155dp"
+                android:layout_marginTop="40dp"
+                android:text="Time"
+                android:textColor="#C800FF"
+                android:textSize="36sp"
+                tools:ignore="DuplicateIds" />
+
+            <Button
+                android:id="@+id/timeButton"
+                android:layout_width="168dp"
+                android:layout_height="73dp"
+                android:layout_marginLeft="109dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="#090909"
+                android:onClick="popTimePicker"
+                android:text="11:09"
+                android:textSize="30sp" />
+
+
+            <ImageView
+                android:id="@+id/book_Arrow2"
+                android:layout_width="72dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="300sp"
+                android:layout_marginTop="34dp"
+                app:srcCompat="@drawable/arrow" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

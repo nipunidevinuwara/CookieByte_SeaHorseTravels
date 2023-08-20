@@ -7,7 +7,7 @@
     <string name="type_03">Solar Sail</string>
 
 
-    <string-array name="spinner_items"   textColor="#1948AA">
+    <string-array name="spinner_items" textColor="#1948AA">
 
 
         <item>Earth</item>
