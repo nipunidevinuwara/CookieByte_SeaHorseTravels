@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "296454004971",
+    "project_id": "cookiebyteseahorsetravels",
+    "storage_bucket": "cookiebyteseahorsetravels.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296454004971:android:db9fd5445122c16c871eae",
+        "android_client_info": {
+          "package_name": "com.example.seahorsetravelsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "296454004971-6none9r5i4ll1qp22fjn0p3f3oa163i2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5brD_tLhKOuhQo8Mz8vJlcEsKDHU7ufU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "296454004971-6none9r5i4ll1qp22fjn0p3f3oa163i2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">SeaHorseTravelsApp</string>
+    <string name="detailsCB">Details from here</string>
+    <string name="type">Travel Type</string>
+    <string name="type_01">Hyper Drive</string>
+    <string name="type_02">Space Jump</string>
+    <string name="type_03">Solar Sail</string>
+
+
+    <string-array name="spinner_items" textColor="#1948AA">
+
+
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Saturn</item>
+        <item>Jupiter</item>
+        <item>Neptune</item>
+
+    </string-array>
 </resources>
