@@ -28,8 +28,9 @@ class BookActivity_01 : AppCompatActivity() {
         book_arrow = findViewById(R.id.book_Arrow1)
         destination = findViewById(R.id.destinate)
         val items = arrayOf("Earth", "Mars", "Mercury", "Venus", "Saturn", "Jupiter", "Neptune")
-        val result = findViewById<TextView>(R.id.test1)
+
         databaseReference = FirebaseDatabase.getInstance().reference
+
         val option1 = findViewById<RadioButton>(R.id.Mars)
         val option2 = findViewById<RadioButton>(R.id.Mercury)
         val option3 = findViewById<RadioButton>(R.id.Earth)
@@ -40,31 +41,15 @@ class BookActivity_01 : AppCompatActivity() {
         val selectedSpinnerItem = spinner.selectedItem.toString()
         val checkedRadioButtonId = destination.checkedRadioButtonId
         val selectedRadioButton = findViewById<RadioButton>(checkedRadioButtonId)
-        val selectedRadioButtonText = selectedRadioButton.text.toString()
 
-        val dataMap = mapOf(
-            "spinnerChoice" to selectedSpinnerItem,
-            "radioButtonChoice" to selectedRadioButtonText)
 
-        val newKey = databaseReference.child("data").push().key
 
-        if (newKey != null) {
-            databaseReference.child("data").child(newKey).setValue(dataMap)
+        book_arrow.setOnClickListener {
+            val intent = Intent(this, BookActivity_02::class.java)
+            intent.putExtra("selectedGender", checkedRadioButtonId)
+            intent.putExtra("From",items)
+            startActivity(intent)
         }
-
-//        destination.setOnCheckedChangeListener { _, checkedId ->
-//            val selectedRadioButton = findViewById<RadioButton>(checkedId)
-//            selectedPlanet = selectedRadioButton.text.toString()
-//        }
-//
-//
-//
-//        book_arrow.setOnClickListener {
-//            val intent = Intent(this, BookActivity_02::class.java)
-//            intent.putExtra("selectedGender", selectedPlanet)
-//            intent.putExtra("From",items)
-//            startActivity(intent)
-//        }
 
 
     }

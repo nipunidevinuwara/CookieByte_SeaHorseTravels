@@ -44,7 +44,7 @@ class BookActivity_02 : AppCompatActivity() {
         solarSoil = findViewById(R.id.solarSail)
         book_Arrow2 = findViewById(R.id.book_Arrow2)
 
-        val resultTextView = findViewById<TextView>(R.id.test)
+
 
         initDatePicker();
 
@@ -54,13 +54,6 @@ class BookActivity_02 : AppCompatActivity() {
 //        print(selectedOption)
 //        print(selectedOption1.toString())
 
-
-        val selectedGender = intent.getStringExtra("destination")
-        if (selectedGender != null) {
-            resultTextView.text = "Selected Gender: $selectedGender"
-        } else {
-            resultTextView.text = "No gender selected"
-        }
 
         book_Arrow2.setOnClickListener {
             var intent = Intent(this, BookActivity_03::class.java)

@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/black"
     tools:context=".BookActivity_02">
 <!--    <include-->
 <!--        android:id="@+id/customToolBar1"-->
@@ -89,13 +89,7 @@
                 android:layout_marginLeft="300dp"
                 android:layout_marginTop="-46dp"
                 android:button="@drawable/hexagon"
-                android:checked="true" />
-
-            <TextView
-                android:id="@+id/test"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:text="TextView" />
+                android:checked="false" />
 
             <TextView
                 android:id="@+id/textView"
